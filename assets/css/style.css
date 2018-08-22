@@ -31,7 +31,7 @@ p {
     line-height: 140%;
 }
 
-/* Masthead */
+/* General Masthead */
 
 #masthead {
     position: fixed;
@@ -42,7 +42,7 @@ p {
     background: #fff;
     box-shadow: 0px 8px 7px 0px #aaa;
     overflow: hidden;
-  }
+}
 
 header .container {
     width: 100%;
@@ -50,7 +50,7 @@ header .container {
     margin: 0 auto;
     clear: both;
     overflow: hidden;
-  }
+}
 
 #logo {
     float: left;
@@ -64,11 +64,11 @@ header .container {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 8px 7px 0px #aaa;
     line-height: 75px;
-  }
+}
 
 nav {
     float: right;
-  }
+}
   
 nav a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -91,15 +91,7 @@ nav a#active {
     color: #ffffff;
 }
 
-/* Content */
-
-main .container {
-    padding: 20px;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
-  }
+/* index.html-Content */
   
 #main-container {
     background: #fff;
@@ -109,9 +101,27 @@ main .container {
     margin: 0 auto;
     clear: both;
     margin-top: 100px;
-    padding-top: 0px;
-  }
+    padding: 20px;
+}
   
+.profile-image {
+    max-width: 15rem;
+    border: .5px solid #333;
+    height: auto;
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+}
+
+.bio {
+    width: 70%;
+    float: left;
+}
+
+.bio p:first-child {
+    margin-top: 0px;
+}
+
 .container a {
     text-decoration: none;
 }
@@ -122,7 +132,7 @@ main .container {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Gallery */
+/* portfolio.html-Gallery */
 
 div.gallery {
     border: 1px solid #ccc;
@@ -149,7 +159,14 @@ div.desc {
     margin-bottom: 15px;
 }
 
-/* Contact */
+/* contact.html-Contact */
+
+.form-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
 
 form label {
     display: block;
@@ -181,17 +198,7 @@ input[type=submit] {
     border: none;
 }
 
-/* Profile Image*/
-
-.profile-image {
-    max-width: 15rem;
-    border: .5px solid #333;
-    height: auto;
-    padding: 0;
-    float: left;
-    margin-right: 20px;
-    margin-top: 15px;
-}
+/* Footer */
 
 .footer {
     position: absolute;
@@ -211,7 +218,7 @@ input[type=submit] {
 
 .white, .white a {
     color: #fff;
-  }
+}
 
 
 
@@ -233,8 +240,6 @@ Responsive layout - Media Queries
 }
 
 
-
-
 /**************
     768px
 ***************/
@@ -251,15 +256,29 @@ Responsive layout - Media Queries
     #main-container {
         max-width: 95%;
       }
+
+    .bio {
+        padding-top: 10px;
+        width: 100%;
+        float: left;
+    }
+
+    .bio p {
+        font-size: 1.0rem;
+        text-align: left;
+        line-height: 1.6;
+    }
 }
-
-
 
 
 /**************
     640px
 ***************/
 @media screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+    }
+
     .container {
         width: 100%;
     }
@@ -276,9 +295,26 @@ Responsive layout - Media Queries
     }
 
     #main-container {
-        margin-top: 170px;
+        margin-top: 0px;
         max-width: 95%;
       }
+
+    .profile-image {
+        max-width: 16.2rem;
+        margin-right: 0px;
+    }
+
+    .bio {
+        padding-top: 20px;
+        width: 100%;
+        float: left;
+    }
+
+    .bio p {
+        font-size: 1.0rem;
+        text-align: left;
+        line-height: 1.6;
+    }
 
     .responsive {
         width: 100%;
