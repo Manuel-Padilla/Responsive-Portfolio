@@ -102,6 +102,7 @@ nav a#active {
     clear: both;
     margin-top: 100px;
     padding: 20px;
+    border-radius: 15px;
 }
   
 .profile-image {
@@ -116,6 +117,7 @@ nav a#active {
 .bio {
     width: 70%;
     float: left;
+    padding: 0 15px 0;
 }
 
 .bio p:first-child {
@@ -128,8 +130,15 @@ nav a#active {
 
 #school {
     color: #bf5700;
-    /* font-weight: bold; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.to-top {
+    visibility: hidden;
+}
+
+div.to-top-portfolio {
+    visibility: hidden;
 }
 
 /* portfolio.html-Gallery */
@@ -237,6 +246,12 @@ Responsive layout - Media Queries
     #main-container {
         max-width: 95%;
       }
+
+    .bio {
+        width: 70%;
+        float: left;
+        padding: 0 15px 0;
+    }
 }
 
 
@@ -267,6 +282,11 @@ Responsive layout - Media Queries
         font-size: 1.0rem;
         text-align: left;
         line-height: 1.6;
+    }
+
+    div.to-top-portfolio {
+        visibility: visible;
+        text-align: center;
     }
 }
 
@@ -309,7 +329,7 @@ Responsive layout - Media Queries
         width: 100%;
         float: left;
     }
-
+        
     .bio p {
         font-size: 1.0rem;
         text-align: left;
@@ -320,6 +340,15 @@ Responsive layout - Media Queries
         width: 100%;
     }
     
+    div.to-top {
+        visibility: visible;
+    }
+
+    div.to-top-portfolio {
+        visibility: visible;
+        text-align: center;
+    }
+
     .footer p {
         font-size: 15px;
     }
