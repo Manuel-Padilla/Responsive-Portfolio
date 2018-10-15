@@ -152,13 +152,22 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.1rem;
+}
+
+div.github {
+  padding: 0 0 15px;
+  text-align: center;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.1rem;
 }
 
 .responsive {
